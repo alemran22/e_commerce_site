@@ -1,5 +1,11 @@
+import LogInSection from "../../components/LogIn";
+
 const LogIn = () => {
-  return <div>LogIn</div>;
+  return (
+    <div>
+      <LogInSection />
+    </div>
+  );
 };
 
 export default LogIn;

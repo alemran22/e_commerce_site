@@ -7,6 +7,37 @@ import { CgProfile } from "react-icons/cg";
 const NavArea = () => {
   return (
     <div>
+      <div className="bg-black">
+        <div className="max-w-7xl mx-auto text-white flex flex-col lg:flex-row py-3 lg:px-28 justify-end items-center text-sm lg:gap-[106px]">
+          <div className="flex flex-col lg:flex-row gap-2">
+            <p className="px-2 text-wrap poppins">
+              Summer Sale For All Swim Suits And Free Express Delivery - OFF
+              50%!
+            </p>
+            <button className="border-b border-white font-semibold border-none outline-none poppins">
+              ShopNow
+            </button>
+          </div>
+          <div className>
+            <select
+              name="language"
+              id="language"
+              className="bg-transparent poppins font-medium cursor-pointer outline-none"
+            >
+              <option
+                value="English"
+                className="poppins font-medium text-black"
+              >
+                English
+              </option>
+              <option value="Bangla" className="poppins font-medium text-black">
+                Bangla
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+
       <header className="max-w-7xl mx-auto w-full lg:px-28 px-2 flex flex-row justify-between pt-10 pb-4 border-b-2">
         {/* left */}
         <div className="lg:w-[60%] w-full flex flex-row justify-between items-center">
@@ -104,7 +135,6 @@ const NavArea = () => {
           </div>
         </div>
       </header>
-      ;
     </div>
   );
 };

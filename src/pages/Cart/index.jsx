@@ -1,7 +1,11 @@
-import React from "react";
+import CartSection from "../../components/CartSection";
 
 const Cart = () => {
-  return <div>Cart</div>;
+  return (
+    <div>
+      <CartSection />
+    </div>
+  );
 };
 
 export default Cart;
