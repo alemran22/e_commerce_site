@@ -1,53 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 import apple from "../../../assets/icons/1200px-Apple_gray_logo 1.svg";
 import mobile from "../../../assets/images/home/banner/hero_endframe__cvklg0xk3w6e_large 2.svg";
+import bannerData from "./bannerData";
+import LeftCategories from "./LeftCategories";
 const Banner = () => {
   return (
     <div>
       <section className="flex flex-col-reverse lg:flex-row w-full gap-7 px-4 lg:px-28">
         {/* left */}
         <div className="flex flex-col lg:w-3/12 gap-2 lg:gap-3 lg:border-r-2 pt-4 md:pt-10">
-          <div className="flex flex-row gap-9">
-            <a href className="text-base poppins">
-              Woman&apos;s Fashion
-            </a>
-            <img
-              src="./assets/icon/Vector_h.svg"
-              alt
-              className="w-2 cursor-pointer"
-            />
-          </div>
-          <div className="flex flex-row gap-16">
-            <a href className="text-base poppins">
-              Man's Fashion
-            </a>
-            <img
-              src="./assets/icon/Vector_h.svg"
-              alt
-              className="w-2 cursor-pointer"
-            />
-          </div>
-          <a href="#" className="text-base poppins">
-            Electronics
-          </a>
-          <a href="#" className="text-base poppins">
-            Home &amp; Lifestyle
-          </a>
-          <a href="#" className="text-base poppins">
-            Medicine
-          </a>
-          <a href="#" className="text-base poppins">
-            Sports &amp; Outdodr
-          </a>
-          <a href="#" className="text-base poppins">
-            Baby's &amp; Toys
-          </a>
-          <a href="#" className="text-base poppins">
-            Groceries &amp; Pets
-          </a>
-          <a href="#" className="text-base poppins">
-            Health &amp; Beauty
-          </a>
+          {bannerData.map((data) => (
+            <LeftCategories key={data.id} {...data} />
+          ))}
         </div>
         {/* right */}
         <div className="relative w-full flex flex-row justify-center pt-4 md:pt-10">

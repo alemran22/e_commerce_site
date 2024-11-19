@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div>
@@ -39,21 +41,21 @@ const Footer = () => {
             {/* col 3 */}
             <div className="w-fit flex flex-col gap-3 lg:gap-4">
               <h4 className="text-white text-2xl font-semibold">Account</h4>
-              <a href="./profile.html" className="text-white text-base">
+              <Link to={"profile"} className="text-white text-base">
                 My Account
-              </a>
-              <a href="./login.html" className="text-white text-base">
+              </Link>
+              <Link to={"login"} className="text-white text-base">
                 Login/Register
-              </a>
-              <a href="./cart.html" className="text-white text-base">
+              </Link>
+              <Link to={"cart"} className="text-white text-base">
                 Cart
-              </a>
-              <a href="./wishlist.html" className="text-white text-base">
+              </Link>
+              <Link to={"wishlist"} className="text-white text-base">
                 Wishlist
-              </a>
-              <a href="./checkout.html" className="text-white text-base">
+              </Link>
+              <Link to={"checkout"} className="text-white text-base">
                 Shop
-              </a>
+              </Link>
             </div>
             {/* col 4 */}
             <div className="w-fit flex flex-col gap-3 lg:gap-4">

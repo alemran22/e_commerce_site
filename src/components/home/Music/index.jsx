@@ -1,5 +1,4 @@
-import React from "react";
-
+import speaker from "../../../assets/images/home/music/JBL_BOOMBOX_2_HERO_020_x1 (1) 1.svg";
 const Music = () => {
   return (
     <section className="px-4 lg:px-28">
@@ -47,11 +46,7 @@ const Music = () => {
           </div>
           {/* right */}
           <div className="bg-black w-full lg:w-6/12 flex flex-row ">
-            <img
-              src="./assets/image/JBL_BOOMBOX_2_HERO_020_x1 (1) 1.svg"
-              alt
-              className="self-center p-12"
-            />
+            <img src={speaker} alt className="self-center p-12" />
           </div>
         </div>
       </div>
